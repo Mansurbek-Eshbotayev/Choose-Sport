@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: 
+  url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'), 
+  url('../fonts/fraunces-v10-latin-900.woff') format('woff');
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+
+img{
+  vertical-align: middle;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Fraunces', 'Arial' , serif;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}
+
+.site__title{
+  text-align: center;
+  margin: 100px  0;
+}
+
+
+.sport{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.sport__choose{
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+  left: 0px;
+}
+
+input:hover ~ .sport__choose{
+  background-image: url(../img/tabletennis.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:checked ~ .sport__choose{
+  background-image: url(../img/tabletennis.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:checked ~ .choose__sport{
+  opacity: 0.5;
+}
+
+input:disabled ~ .sport__choose{
+  background-image: url(../img/tabletennis.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:disabled ~ .choose__sport{
+  opacity: 0.5;
+}
+
+
+
+/* basketbol */
+
+input:hover ~ .sport__choose--basketbol{
+  background-image: url(../img/basketballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:checked ~ .sport__choose--basketbol{
+  background-image: url(../img/basketballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:checked ~ .choose__sport{
+  opacity: 0.5;
+}
+
+/* volebol */
+
+input:hover ~ .sport__choose--volebol{
+  background-image: url(../img/volleyballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:checked ~ .sport__choose--volebol{
+  background-image: url(../img/volleyballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:checked ~ .choose__sport{
+  opacity: 0.5;
+}
+
+/* Hokkey */
+
+input:hover ~ .sport__choose--hokkey{
+  background-image: url(../img/hockeypuck.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:checked ~ .sport__choose--hokkey{
+  background-image: url(../img/hockeypuck.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:checked ~ .choose__sport{
+  opacity: 0.5;
+}
+
+
+
+
