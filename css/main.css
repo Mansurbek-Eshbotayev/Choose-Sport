@@ -164,6 +164,24 @@ input:checked ~ .choose__sport{
   opacity: 0.5;
 }
 
+.sport__sent{
+  display: block;
+  left: 0%;
+  margin-top: 30px;
+  padding:5px 20px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.sport__sent:hover{
+  display: block;
+  left: 0%;
+  margin-top: 30px;
+  padding:5px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+}
 
 
 
