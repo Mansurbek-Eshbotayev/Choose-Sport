@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: 'Fraunces';
   font-style: normal;
@@ -75,6 +82,15 @@ input:hover ~ .sport__choose{
   background-size: contain;
 }
 
+input:focus ~ .sport__choose{
+  background-image: url(../img/tabletennis.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: 0px 8px 8px rgb(0 0 0 / 50%);
+          box-shadow: 0px 8px 8px rgb(0 0 0 / 50%);
+}
+
 input:checked ~ .sport__choose{
   background-image: url(../img/tabletennis.png);
   background-size: 17px 17px;
@@ -110,6 +126,13 @@ input:hover ~ .sport__choose--basketbol{
   background-size: contain;
 }
 
+input:focus ~ .sport__choose--basketbol{
+  background-image: url(../img/basketballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 input:checked ~ .sport__choose--basketbol{
   background-image: url(../img/basketballball.png);
   background-size: 17px 17px;
@@ -122,9 +145,28 @@ input:checked ~ .choose__sport{
   opacity: 0.5;
 }
 
+input:disabled ~ .sport__choose--basketbol{
+  background-image: url(../img/basketballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:disabled ~ .choose__sport{
+  opacity: 0.5;
+}
+
 /* volebol */
 
 input:hover ~ .sport__choose--volebol{
+  background-image: url(../img/volleyballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:focus ~ .sport__choose--volebol{
   background-image: url(../img/volleyballball.png);
   background-size: 17px 17px;
   background-repeat: no-repeat;
@@ -143,7 +185,26 @@ input:checked ~ .choose__sport{
   opacity: 0.5;
 }
 
+input:disabled ~ .sport__choose--volebol{
+  background-image: url(../img/volleyballball.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:disabled ~ .choose__sport{
+  opacity: 0.5;
+}
+
 /* Hokkey */
+
+input:hover ~ .sport__choose--hokkey{
+  background-image: url(../img/hockeypuck.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 input:hover ~ .sport__choose--hokkey{
   background-image: url(../img/hockeypuck.png);
@@ -161,6 +222,18 @@ input:checked ~ .sport__choose--hokkey{
 }
 
 input:checked ~ .choose__sport{
+  opacity: 0.5;
+}
+
+input:disabled ~ .sport__choose--hokkey{
+  background-image: url(../img/hockeypuck.png);
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+input:disabled ~ .choose__sport{
   opacity: 0.5;
 }
 
@@ -182,6 +255,5 @@ input:checked ~ .choose__sport{
   background-color: black;
   border-radius: 3px;
 }
-
 
 
