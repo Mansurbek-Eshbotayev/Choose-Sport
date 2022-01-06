@@ -75,12 +75,6 @@ h1,h2,h3,h4,h5,p{
   left: 0px;
 }
 
-input:hover ~ .sport__choose{
-  background-image: url(../img/tabletennis.png);
-  background-size: 17px 17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 input:focus ~ .sport__choose{
   background-image: url(../img/tabletennis.png);
@@ -104,14 +98,15 @@ input:checked ~ .choose__sport{
 }
 
 input:disabled ~ .sport__choose{
-  background-image: url(../img/tabletennis.png);
   background-size: 17px 17px;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.6;
+  color: gray;
+  opacity: 0.3;
 }
 
 input:disabled ~ .choose__sport{
+  color: gray;
   opacity: 0.5;
 }
 
@@ -119,12 +114,6 @@ input:disabled ~ .choose__sport{
 
 /* basketbol */
 
-input:hover ~ .sport__choose--basketbol{
-  background-image: url(../img/basketballball.png);
-  background-size: 17px 17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 input:focus ~ .sport__choose--basketbol{
   background-image: url(../img/basketballball.png);
@@ -150,21 +139,18 @@ input:disabled ~ .sport__choose--basketbol{
   background-size: 17px 17px;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.6;
+  color: gray;
+  opacity: 0.3;
 }
 
 input:disabled ~ .choose__sport{
+  color: gray;
   opacity: 0.5;
 }
 
 /* volebol */
 
-input:hover ~ .sport__choose--volebol{
-  background-image: url(../img/volleyballball.png);
-  background-size: 17px 17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 
 input:focus ~ .sport__choose--volebol{
   background-image: url(../img/volleyballball.png);
@@ -190,28 +176,16 @@ input:disabled ~ .sport__choose--volebol{
   background-size: 17px 17px;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.6;
+  color: gray;
+  opacity: 0.3;
 }
 
 input:disabled ~ .choose__sport{
+  color: gray;
   opacity: 0.5;
 }
 
 /* Hokkey */
-
-input:hover ~ .sport__choose--hokkey{
-  background-image: url(../img/hockeypuck.png);
-  background-size: 17px 17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-input:hover ~ .sport__choose--hokkey{
-  background-image: url(../img/hockeypuck.png);
-  background-size: 17px 17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 input:checked ~ .sport__choose--hokkey{
   background-image: url(../img/hockeypuck.png);
@@ -230,10 +204,12 @@ input:disabled ~ .sport__choose--hokkey{
   background-size: 17px 17px;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.6;
+  color: gray;
+  opacity: 0.3;
 }
 
 input:disabled ~ .choose__sport{
+  color: gray;
   opacity: 0.5;
 }
 
